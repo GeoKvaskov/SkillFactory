@@ -1,0 +1,10 @@
+per_cent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0}
+money = float(input("Введите сумму вклада: "))
+dep = list(per_cent.values())
+dep[0] = round(dep [0] * money, 2)
+dep[1] = round(dep [1] * money, 2)
+dep[2] = round(dep [2] * money, 2)
+dep[3] = round(dep [3] * money, 2)
+a = "Максимальная сумма, которую вы можете заработать - "
+b = str(max(dep))
+print( a + b)
